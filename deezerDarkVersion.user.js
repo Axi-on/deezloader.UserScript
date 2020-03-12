@@ -4,7 +4,7 @@ const openOnStart = !true;
 const DEBUG = !true;
 const SHOW_KEYS = !true; // Show pressed keys
 const L10nDEBUG = !true; // Enable localization override?
-const L10nOVERRIDE = "ru"; // Override your browser language with selected (handy for translation testing)
+const L10nOVERRIDE = "en"; // Override your browser language with selected (handy for translation testing)
 
 const showMp3_32 = true;
 const showMp3_64 = true;
@@ -3225,7 +3225,7 @@ elInsert.appendChild(elInsertTable);
 
 const elRefresh = document.createElement("a");
 elRefresh.classList.add("dlRefresh");
-elRefresh.textContent = `⟳ ${
+elRefresh.textContent = `🔄 ${
   translate.refresh
 } ${translate.tracklist.toLowerCase()}`;
 elRefresh.addEventListener("click", refreshTracklist);
@@ -3407,8 +3407,8 @@ document.head.appendChild(document.createElement("style")).textContent = `
   padding: 5px;
   padding-bottom: 7em;
   height: 100%;
+  width: 35%;
   overflow-y: auto;
-  max-width: 80%;
   font-size: 1.05em;
 }
 #dzDownloader.dzHidden {
@@ -3445,7 +3445,7 @@ document.head.appendChild(document.createElement("style")).textContent = `
 .dlRefresh {
   font-size: .85em;
   color: #92929D;
-  margin-left: 25px;
+  margin-left: 45px;
 }
 .dlTitle {
   cursor: default;
