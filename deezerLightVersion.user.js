@@ -4,7 +4,7 @@ const openOnStart   = !true;
 const DEBUG         = !true;
 const SHOW_KEYS     = !true;    // Show pressed keys
 const L10nDEBUG     = !true;    // Enable localization override?
-const L10nOVERRIDE  = 'de';     // Override your browser language with selected (handy for translation testing)
+const L10nOVERRIDE  = 'en';     // Override your browser language with selected (handy for translation testing)
 
 const showMp3_32    = !true;
 const showMp3_64    = !true;
