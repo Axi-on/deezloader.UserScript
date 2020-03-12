@@ -1257,7 +1257,7 @@ elInsert.appendChild(elInsertTable);
 
 const elRefresh = document.createElement('a');
 elRefresh.classList.add('dlRefresh');
-elRefresh.textContent = `⟳ ${translate.refresh} ${translate.tracklist.toLowerCase()}`;
+elRefresh.textContent = `🔄 ${translate.refresh} ${translate.tracklist.toLowerCase()}`;
 elRefresh.addEventListener('click', refreshTracklist);
 
 const elTrackListHeader = document.createElement('p');
@@ -1445,9 +1445,10 @@ document.head.appendChild(document.createElement('style')).textContent = `
   z-index: 299;
   background: #ccc;
   padding: 5px;
+  padding-bottom: 7em;
   height: 100%;
+  width: 35%;
   overflow-y: auto;
-  max-width: 80%;
   font-size: 1.05em;
 }
 #dzDownloader.dzHidden {
@@ -1481,7 +1482,7 @@ document.head.appendChild(document.createElement('style')).textContent = `
 }
 .dlRefresh {
   font-size: .85em;
-  margin-left: 25px;
+  margin-left: 45px;
 }
 .dlTitle {
   cursor: default;
